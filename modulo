@@ -1,0 +1,9 @@
+##Given 3 numbers a,b,c print a*b mod c.
+
+def calculate_mod(a, b, c):
+    result = (a * b) % c
+    return result
+
+a, b, c = map(int, input( ).split())
+result = calculate_mod(a, b, c)
+print(result)
