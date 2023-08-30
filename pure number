@@ -1,0 +1,10 @@
+##program to tell whether a number is pure or not
+ def is_pure_number(n):
+    sum_of_digits = sum(int(digit) for digit in str(n))
+    if sum_of_digits %3 == 0:
+        return "yes"
+    else:
+        return "not"
+n = int(input())
+output = is_pure_number(n)
+print(output)
