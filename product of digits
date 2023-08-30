@@ -1,0 +1,12 @@
+##Given a number N, print the product of the digits.
+
+def product_of_digits(N):
+    product = 1
+    for digit in str(N):
+        product *= int(digit)
+    return product
+
+N = int(input())
+
+output = product_of_digits(N)
+print(output)
